@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #252525;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  font-size: large;
+}
+
+#subt {
+  margin: 20px 0px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.prevGuesses {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultParas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

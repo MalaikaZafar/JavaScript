@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.button {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#cadetBlue {
+  background-color: cadetblue;
+}
+
+#lightCyan {
+  background-color: lightcyan;
+}
+
+#lavender {
+  background-color: lavenderblush;
+}
+
+#lightCoral {
+  background-color: lightcoral;
+}
