@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Project 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello! My name is Malaika</h1>
+      <div class="buttons">
+        <button class="button" id="start">START</button>
+        <button class="button" id="stop">STOP</button>
+      </div>
+    </div>
+
+    <script>
+      let printMe;
+
+      const startBtn = document.querySelector("#start");
+      const stopBtn = document.querySelector("#stop");
+
+      startBtn.addEventListener("click", (e) => {
+        printMe = setInterval(function () {
+          console.log("Maick!");
+        }, 2000);
+      });
+
+      stopBtn.addEventListener("click", (e) => {
+        clearInterval(printMe);
+        console.log("Stopped!");
+      });
+    </script>
+  </body>
+</html>

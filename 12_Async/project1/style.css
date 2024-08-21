@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#stop {
+  height: 40px;
+  width: 80px;
+  font-family: bolder;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: thistle;
+  cursor: pointer;
+}
+
+#stop:hover {
+  background-color: tan;
+}

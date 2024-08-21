@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    height: 40px;
+    width: 80px;
+    font-family: bolder;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: thistle;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: tan;
+  }
+  

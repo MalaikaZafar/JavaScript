@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited Colors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Press START to change the color every second!</h1>
+      <div class="buttons">
+        <button class="button" id="start">START</button>
+        <button class="button" id="stop">STOP</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let changeColor;
+    let currentIndex = 0;
+    const colors = [
+      "red",
+      "green",
+      "yellow",
+      "lavender",
+      "orange",
+      "lightCoral",
+      "blue",
+      "grey",
+      "wheat",
+      "thistle",
+    ];
+
+    const startBtn = document.getElementById("start");
+    const stopBtn = document.getElementById("stop");
+    const body = document.querySelector("body");
+
+    startBtn.addEventListener("click", (e) => {
+      changeColor = setInterval(function () {
+        colors.forEach((color, index) => {
+          if (index === currentIndex) body.style.backgroundColor = color;
+        });
+
+        currentIndex = (currentIndex + 1) % colors.length;
+      }, 1000);
+    });
+
+    stopBtn.addEventListener("click", (e) => {
+      clearInterval(changeColor);
+      console.log("Stopped!");
+    });
+  </script>
+</html>
